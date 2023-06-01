@@ -100,7 +100,7 @@ def pred(image):
 
 api = Flask(__name__)
 
-@api.route('/signtotext', methods=['GET'])
+@api.route('/', methods=['GET'])
 def signToText():
     image = Image.open('test.jpg')
     res = pred(image)
