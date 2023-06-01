@@ -96,9 +96,7 @@ def pred(image):
     #display(Audio(filename, autoplay=True))
     return namesign
 
-# Path: main.py
-if __name__ == '__main__':
-    print('Start')
+
 
 api = Flask(__name__)
 
@@ -108,3 +106,8 @@ def signToText():
     res = pred(image)
     print(res)
     return
+
+# Path: main.py
+if __name__ == '__main__':
+    print('Start')
+    api.run()
