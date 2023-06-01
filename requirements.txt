@@ -1,3 +1,5 @@
 numpy
 tensorflow
 gtts
+Pillow
+flask

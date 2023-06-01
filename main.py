@@ -1,6 +1,7 @@
 import numpy as np 
 from tensorflow import keras
 from PIL import Image
+from flask import Flask, json
 from tensorflow.keras.preprocessing.image import ImageDataGenerator, img_to_array, array_to_img, load_img
 from tensorflow.keras.utils import to_categorical
 from tensorflow.keras.models import Sequential, load_model
@@ -97,6 +98,13 @@ def pred(image):
 
 # Path: main.py
 if __name__ == '__main__':
+    print('Start')
+
+api = Flask(__name__)
+
+@api.route('/signtotext', methods=['GET'])
+def signToText():
     image = Image.open('test.jpg')
     res = pred(image)
     print(res)
+    return
