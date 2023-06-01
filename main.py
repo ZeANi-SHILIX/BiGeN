@@ -78,7 +78,7 @@ model = keras.models.Sequential([
     keras.layers.Dense(43, activation='softmax')
 ])
 
-model = keras.models.load_model(filepath='CNN.h5')
+model = keras.models.load_model(filepath=r'models/CNN.h5')
 #model = keras.models.load_model(filepath='CNN.h5')
 
 def pred(image):
