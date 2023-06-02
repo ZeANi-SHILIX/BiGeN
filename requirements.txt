@@ -3,3 +3,4 @@ tensorflow
 gtts
 Pillow
 flask
+gradio

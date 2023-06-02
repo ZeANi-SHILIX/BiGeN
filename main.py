@@ -9,6 +9,8 @@ from tensorflow.keras.applications import VGG19
 from tensorflow.keras.layers import Conv2D, MaxPool2D, Dense, Flatten, Dropout
 
 from gtts import gTTS
+import gradio as gr
+from playsound import playsound
 
 batch_size = 1
 seed = 42
@@ -94,6 +96,7 @@ def pred(image):
     tts = gTTS(namesign)
     tts.save(filename)
     #display(Audio(filename, autoplay=True))
+    playsound(filename)
     return namesign
 
 
@@ -110,4 +113,8 @@ def signToText():
 # Path: main.py
 if __name__ == '__main__':
     print('Start')
-    api.run()
+    gr.Interface(fn=pred, 
+             inputs=gr.Image(type="pil"),
+             outputs=gr.Label(num_top_classes=3),
+             examples=[]).launch(debug=True)
+    #api.run()
