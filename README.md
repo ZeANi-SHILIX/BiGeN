@@ -4,7 +4,7 @@
 ![image](https://github.com/ZeANi-SHILIX/BiGeN/assets/113314499/8027456c-2ec8-4353-8276-a93cb4ec3b81)
 
 ## Overview
-The Smart Traffic Obsorvation & Prediction(STOP) project is an AI-based system designed to accurately identify and interpret traffic signs in real-time. By leveraging Convolutional Neural Network (CNN) architecture, STOP reduces the risks associated with manual recognition, enhancing road safety.
+The Smart Traffic Observation & Prediction(STOP) project is an AI-based system designed to accurately identify and interpret traffic signs in real-time. By leveraging Convolutional Neural Network (CNN) architecture, STOP reduces the risks associated with manual recognition, enhancing road safety.
 
 ## Key Features
 - Real-time identification and interpretation of traffic signs.
